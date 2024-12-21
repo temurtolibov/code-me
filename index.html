@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Me</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#ede0d4]">
+    <header
+      class="flex justify-between items-center bg-[#E85D04] py-5 pl-[167px] pr-[200px]"
+    >
+      <img src="./images/logo.svg" alt="code me logo" width="185" height="40" />
+      <div>
+        <ul class="flex items-center gap-[30px]">
+          <li
+            class="relative text-[16px] leading-[20px] text-[#05060F] font-normal group"
+          >
+            <a href="#" class="hover:text-white transition-colors duration-300">
+              Haqida
+            </a>
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
+            ></span>
+          </li>
+
+          <li
+            class="relative text-[16px] leading-[20px] text-[#05060F] font-normal group"
+          >
+            <a href="#" class="hover:text-white transition-colors duration-300">
+              Masalalar
+            </a>
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
+            ></span>
+          </li>
+          <li
+            class="relative text-[16px] leading-[20px] text-[#05060F] font-normal group"
+          >
+            <a href="#" class="hover:text-white transition-colors duration-300">
+              Bizning jamoa
+            </a>
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
+            ></span>
+          </li>
+          <li
+            class="relative text-[16px] leading-[20px] text-[#05060F] font-normal group"
+          >
+            <a href="#" class="hover:text-white transition-colors duration-300">
+              Pro versiya
+            </a>
+            <span
+              class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"
+            ></span>
+          </li>
+          <div class="flex gap-5">
+            <button
+              class="w-[84px] bg-[#EDE0D4] py-3 text-center text-[16px] leading-[20px] rounded-[12px] font-medium transition-all duration-300 ease-in-out transform hover:bg-[#EDE0D4] hover:scale-105 hover:shadow-lg"
+            >
+              Kirish
+            </button>
+            <button
+              class="w-[171px] bg-[#5627FF] py-3 text-white text-center text-[16px] leading-[20px] rounded-[12px] font-medium transition-all duration-300 ease-in-out transform hover:bg-[#6A3FFF] hover:scale-105 hover:shadow-lg"
+            >
+              Ro'yxatdan o'tish
+            </button>
+          </div>
+        </ul>
+      </div>
+    </header>
+    <main class="">
+      <section class="hero-section">
+        <div class="hero">
+          <h1
+            class="font-bold relative text-[72px] leading-[72px] text-center text-[#05060F] pt-[50px]"
+          >
+            Biz bilan birga dasturlash oson
+          </h1>
+          <span class="absolute right-[450px]"
+            ><img
+              src="./images/yellow-line.svg"
+              alt="yellow line"
+              width="336"
+              height="12"
+            />
+          </span>
+          <div
+            class="text-center pt-[40px] opacity-[70%] text-[24px] leading-[22px]"
+          >
+            <strong>200K+</strong>
+            <span>Dasturchilar safiga qo’shiling!!!</span>
+          </div>
+          <div class="flex justify-center gap-[20px] mt-[60px]">
+            <button
+              class="w-[171px] bg-[#5627FF] py-[22px] text-white text-center text-[20px] leading-[20px] rounded-[12px] font-medium transition-all duration-300 ease-in-out transform hover:bg-[#6A3FFF] hover:scale-105 hover:shadow-lg"
+            >
+              Ro'yxatdan o'tish
+            </button>
+            <button
+              class="flex w-[343px] bg-[#F5F5F5] py-[22px] gap-[10px] pl-[20px] text-center text-[20px] leading-[20px] rounded-[12px] font-medium transition-all duration-300 ease-in-out transform hover:bg-[#F5F5F5] hover:scale-105 hover:shadow-lg"
+            >
+              <img
+                src="./images/google.svg"
+                alt="google"
+                width="24"
+                height="24"
+              />
+              Google bilan davom ettiring
+            </button>
+          </div>
+          <div class="flex gap-[94px] justify-center mt-[192px]">
+            <div
+              class="w-[439px] pl-[20px] flex items-center gap-[10px] border-[1px] border-[#E85D04] rounded-[36px] py-[20px]"
+            >
+              <span
+                class="flex items-center block w-[72px] h-[72px] rounded-[50px] bg-[#FDE194]"
+                ><img
+                  class="mx-auto text-center"
+                  src="./images/cup.png"
+                  alt="cup"
+                  width="32"
+                  height="32"
+              /></span>
+              <p
+                class="w-[300px] text-[#6A6A6A] font-medium text-[16px] leading-[20px]"
+              >
+                O’z tengdoshlaringiz bilan sog’lom raqobat qiling va yanada
+                rivojlaning.
+              </p>
+            </div>
+            <div
+              class="w-[439px] pl-[20px] flex items-center gap-[10px] border-[1px] border-[#E85D04] rounded-[36px] py-[20px]"
+            >
+              <span
+                class="flex items-center block w-[72px] h-[72px] rounded-[50px] bg-[#EDE7FF]"
+                ><img
+                  class="mx-auto text-center"
+                  src="./images/table.png"
+                  alt="cup"
+                  width="32"
+                  height="32"
+              /></span>
+              <p
+                class="w-[300px] text-[#6A6A6A] font-medium text-[16px] leading-[20px]"
+              >
+                200K+ bizning masalalarimizni yechish orqali o’z
+                algoritimingizni yaxshilang.
+              </p>
+            </div>
+            <div
+              class="w-[439px] pl-[20px] flex items-center gap-[10px] border-[1px] border-[#E85D04] rounded-[36px] py-[20px]"
+            >
+              <span
+                class="flex items-center block w-[72px] h-[72px] rounded-[50px] bg-[#AFD7E1]"
+                ><img
+                  class="mx-auto text-center"
+                  src="./images/magistr.png"
+                  alt="cup"
+                  width="32"
+                  height="32"
+              /></span>
+              <p
+                class="w-[300px] text-[#6A6A6A] font-medium text-[16px] leading-[20px]"
+              >
+                O’z tengdoshlaringiz bilan sog’lom raqobat qiling va yanada
+                rivojlaning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="suggest-section">
+        <h2
+          class="font-semibold text-[48px] leading-[72px] text-center pt-[174px]"
+        >
+          Siz uchun takliflarimiz
+        </h2>
+        <p
+          class="text-[#6A6A6A] font-normal text-[24px] leading-[30px] text-center pt-[20px]"
+        >
+          Biz bilan birga o’rganing va yuksak marralarni zabt eting
+        </p>
+        <div class="mt-[76px] flex items-center gap-[20px] justify-center">
+          <div
+            class="w-[454px] drop-shadow-xl rounded-[30px] py-[55px] px-[66px] bg-white"
+          >
+            <h3
+              class="font-semibold text-[24px] leading-[30px] text-[#05060F] pb-[10px]"
+            >
+              Algoritimlash
+            </h3>
+            <p
+              class="font-normal text-[16px] leading-[20px] text-[#6A6A6A] pb-[74px]"
+            >
+              Forem ipsum dolor sit amet adipiscing elit.
+            </p>
+            <img
+              class="pl-[30px]"
+              src="./images/algoritm.png"
+              alt="algortimlash"
+              width="239"
+              height="234"
+            />
+          </div>
+          <div
+            class="w-[454px] drop-shadow-xl rounded-[30px] py-[55px] px-[66px] bg-white"
+          >
+            <h3
+              class="font-semibold text-[24px] leading-[30px] text-[#05060F] pb-[10px]"
+            >
+              Musobaqalar
+            </h3>
+            <p
+              class="font-normal text-[16px] leading-[20px] text-[#6A6A6A] pb-[74px]"
+            >
+              Forem ipsum dolor sit amet adipiscing elit.
+            </p>
+            <img
+              class="pl-[30px]"
+              src="./images/musobaqa.png"
+              alt="algortimlash"
+              width="239"
+              height="234"
+            />
+          </div>
+          <div
+            class="w-[454px] drop-shadow-xl rounded-[30px] py-[55px] px-[66px] bg-white"
+          >
+            <h3
+              class="font-semibold text-[24px] leading-[30px] text-[#05060F] pb-[10px]"
+            >
+              Dasturlash kurslari
+            </h3>
+            <p
+              class="font-normal text-[16px] leading-[20px] text-[#6A6A6A] pb-[74px]"
+            >
+              Forem ipsum dolor sit amet adipiscing elit.
+            </p>
+            <img
+              class="pl-[30px]"
+              src="./images/kurs.png"
+              alt="algortimlash"
+              width="270"
+              height="234"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="learn">
+        <h2
+          class="font-semibold text-[48px] leading-[72px] text-center pt-[174px]"
+        >
+          Biz bilan birga o’rganing
+        </h2>
+        <p
+          class="text-[#6A6A6A] font-normal text-[24px] leading-[30px] text-center pt-[20px]"
+        >
+          Forem ipsum dolor sit amet adipiscing elit forem ipsum dolor sit amet
+          adipiscing elit.
+        </p>
+        <div class="mt-[76px] flex items-center gap-[20px] justify-center">
+          <div
+            class="w-[454px] drop-shadow-xl rounded-[30px] pt-[37px] pb-[27px] px-[66px] bg-white"
+          >
+            <img
+              src="./images/web-d.png"
+              alt="web dasturlash"
+              width="393"
+              height="220"
+            />
+            <div class="flex items-center justify-between py-[30px]">
+              <div>
+                <h4 class="font-semibold text-[24px] leading-[30px]">
+                  Web dasturlash
+                </h4>
+                <p
+                  class="font-normal text-[16px] leading-[20px] text-[#6A6A6A]"
+                >
+                  Forem ipsum dolor sit amet adipiscing elit.
+                </p>
+              </div>
+              <span
+                class="flex items-center block w-[65px] h-[58px] rounded-[50px] bg-[#EDE7FF]"
+                ><img
+                  class="mx-auto text-center"
+                  src="./images/clipboard.png"
+                  alt="cup"
+                  width="28"
+                  height="28"
+              /></span>
+            </div>
+          </div>
+          <div
+            class="w-[454px] drop-shadow-xl rounded-[30px] pt-[55px] pb-[30px] px-[66px] bg-white"
+          >
+            <img
+              src="./images/ui-ux.png"
+              alt="web dasturlash"
+              width="393"
+              height="220"
+            />
+            <div class="flex items-center justify-between py-[30px]">
+              <div>
+                <h4 class="font-semibold text-[24px] leading-[30px]">
+                  UX/UI Dizayn
+                </h4>
+                <p
+                  class="font-normal text-[16px] leading-[20px] text-[#6A6A6A]"
+                >
+                  Forem ipsum dolor sit amet adipiscing elit.
+                </p>
+              </div>
+              <span
+                class="flex items-center block w-[65px] h-[58px] rounded-[50px] bg-[#FDE194]"
+                ><img
+                  class="mx-auto text-center"
+                  src="./images/pen-tool.png"
+                  alt="cup"
+                  width="28"
+                  height="28"
+              /></span>
+            </div>
+          </div>
+          <div
+            class="w-[454px] drop-shadow-xl rounded-[30px] pt-[55px] pb-[30px] px-[66px] bg-white"
+          >
+            <img
+              src="./images/mobil-d.png"
+              alt="web dasturlash"
+              width="393"
+              height="220"
+            />
+            <div class="flex items-center justify-between py-[30px]">
+              <div>
+                <h4 class="font-semibold text-[24px] leading-[30px]">
+                  Mobil dasturlash
+                </h4>
+                <p
+                  class="font-normal text-[16px] leading-[20px] text-[#6A6A6A]"
+                >
+                  Forem ipsum dolor sit amet adipiscing elit.
+                </p>
+              </div>
+              <span
+                class="flex items-center block w-[65px] h-[58px] rounded-[50px] bg-[#AFD7E1]"
+                ><img
+                  class="mx-auto text-center"
+                  src="./images/sms.png"
+                  alt="cup"
+                  width="28"
+                  height="28"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="student">
+        <h2
+          class="font-semibold text-[48px] leading-[72px] text-center pt-[174px]"
+        >
+          Talabalarimizning fikirlari
+        </h2>
+        <p
+          class="w-[580px] mx-auto text-center text-[#6A6A6A] font-normal text-[24px] leading-[30px] text-center pt-[20px]"
+        >
+          Bizning har bir talabalarimiz <br />
+          biz bilan birga yuksak marralarga erishishmoqda.
+        </p>
+        <div class="pl-[66px] py-[50px] flex justify-center gap-[20px]">
+          <div
+            class="w-[453px] rounded-[30px] py-[40px] pl-[40px] bg-[#F6FAFD]"
+          >
+            <div class="flex gap-1">
+              <img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              />
+            </div>
+            <p
+              class="w-[318px] pt-[40px] font-normal text-[18px] leading-[22px] text-[#092C4C]"
+            >
+              Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum.
+            </p>
+            <div class="flex gap-[10px] items-center pt-[29px]">
+              <img src="./images/alex.svg" alt="alex" width="56" height="56" />
+              <div class="flex flex-col">
+                <strong
+                  class="font-normal text-[16px] leading-[20px] text-[#526477]"
+                  >Alex Bychkov</strong
+                >
+                <span
+                  class="font-normal text-[16px] leading-[20px] text-[#7E92A2]"
+                  >05.03.2023</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[453px] rounded-[30px] py-[40px] pl-[40px] bg-[#F6FAFD]"
+          >
+            <div class="flex gap-1">
+              <img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              />
+            </div>
+            <p
+              class="w-[318px] pt-[40px] font-normal text-[18px] leading-[22px] text-[#092C4C]"
+            >
+              Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum.
+            </p>
+            <div class="flex gap-[10px] items-center pt-[29px]">
+              <img src="./images/sara.svg" alt="alex" width="56" height="56" />
+              <div class="flex flex-col">
+                <strong
+                  class="font-normal text-[16px] leading-[20px] text-[#526477]"
+                  >Sara Kim</strong
+                >
+                <span
+                  class="font-normal text-[16px] leading-[20px] text-[#7E92A2]"
+                  >03.03.2023</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[453px] rounded-[30px] py-[40px] pl-[40px] bg-[#F6FAFD]"
+          >
+            <div class="flex gap-1">
+              <img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              /><img
+                src="./images/full-star.svg"
+                alt="star"
+                width="32"
+                height="32"
+              />
+            </div>
+            <p
+              class="w-[318px] pt-[40px] font-normal text-[18px] leading-[22px] text-[#092C4C]"
+            >
+              Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum.
+            </p>
+            <div class="flex gap-[10px] items-center pt-[29px]">
+              <img src="./images/sasha.svg" alt="alex" width="56" height="56" />
+              <div class="flex flex-col">
+                <strong
+                  class="font-normal text-[16px] leading-[20px] text-[#526477]"
+                  >Sasha Karim</strong
+                >
+                <span
+                  class="font-normal text-[16px] leading-[20px] text-[#7E92A2]"
+                  >05.03.2023</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center py-[100px] gap-[136px]">
+          <div class="flex flex-col">
+            <strong
+              class="font-bold pb-2 text-center text-[59px] leading-[67px] text-[#092C4C]"
+              >200k+</strong
+            >
+            <span
+              class="font-normal text-center text-[17px] leading-[30px] text-[#092C4C]"
+              >Bizning masalalarimiz</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <strong
+              class="font-bold pb-2 text-center text-[59px] leading-[67px] text-[#092C4C]"
+              >160+</strong
+            >
+            <span
+              class="font-normal text-center text-[17px] leading-[30px] text-[#092C4C]"
+              >Talabalarimiz</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <strong
+              class="font-bold pb-2 text-center text-[59px] leading-[67px] text-[#092C4C]"
+              >200+</strong
+            >
+            <span
+              class="font-normal text-center text-[17px] leading-[30px] text-[#092C4C]"
+              >Yakunlangan modullar</span
+            >
+          </div>
+          <div class="flex flex-col">
+            <strong
+              class="font-bold pb-2 text-center text-[59px] leading-[67px] text-[#092C4C]"
+              >94%</strong
+            >
+            <span
+              class="font-normal text-center text-[17px] leading-[30px] text-[#092C4C]"
+              >Bizning statistika</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-[#E85D04] rounded-t-[100px] pt-[80px] px-[60px]">
+      <div class="pb-[73px]">
+        <div class="flex justify-between items-start">
+          <div>
+            <img src="./images/logo2.svg" alt="logo" width="138" height="64" />
+            <p
+              class="font-normal text-[18px] leading-[22px] pt-[30px] w-[422px]"
+            >
+              Borem ipsum dolor sit amet, consectetur adipiscing elit vulputate
+              libero et velit interdum.
+            </p>
+            <div class="flex items-center gap-[30px] pt-[60px]">
+              <div class="flex space-x-4">
+                <img
+                  src="./images/youtube.svg"
+                  alt="youtube"
+                  width="50"
+                  height="50"
+                  class="transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-6 hover:shadow-lg"
+                />
+                <img
+                  src="./images/instagram.svg"
+                  alt="instagram"
+                  width="50"
+                  height="50"
+                  class="transition-transform duration-300 ease-in-out hover:scale-110 hover:-rotate-6 hover:shadow-lg"
+                />
+                <img
+                  src="./images/telegram.svg"
+                  alt="telegram"
+                  width="50"
+                  height="50"
+                  class="transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-6 hover:shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="flex items-start gap-[100px]">
+            <ul class="font-normal text-[24px] leading-[40px] space-y-4">
+              <li class="text-white group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-slate-500"
+                >
+                  Home
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-slate-500 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-[#5627FF]"
+                >
+                  Takliflarimiz
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#5627FF] transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-[#5627FF]"
+                >
+                  Kurslarimiz
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#5627FF] transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-[#5627FF]"
+                >
+                  Fikirlar
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#5627FF] transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="font-normal text-[24px] leading-[40px] space-y-4">
+              <li class="text-white group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-slate-500"
+                >
+                  Resurslar
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-slate-500 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-[#5627FF]"
+                >
+                  Dasturlash uchun
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#5627FF] transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-[#5627FF]"
+                >
+                  Dizayn uchun
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#5627FF] transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="font-normal text-[24px] leading-[40px] space-y-4">
+              <li class="text-white group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-slate-500"
+                >
+                  Biz haqimizda
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-slate-500 transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-[#5627FF]"
+                >
+                  Dasturchilar
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#5627FF] transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+              <li class="group">
+                <a
+                  href="#"
+                  class="relative transition-all duration-300 ease-in-out hover:text-[#5627FF]"
+                >
+                  Dizaynerlar
+                  <span
+                    class="absolute left-0 bottom-[-2px] w-0 h-[2px] bg-[#5627FF] transition-all duration-300 group-hover:w-full"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <span
+            class="w-[1400px] border-[3px] border-black block mt-[73px]"
+          ></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
